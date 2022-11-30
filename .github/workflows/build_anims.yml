@@ -13,8 +13,10 @@ jobs:
           # cache: 'pip'
       - run: git clone https://github.com/3b1b/manim.git
       - run: cd manim && git checkout f934bdc61e6709cbb7b56045d6194a83d5a985c3
-      - run: sudo apt-get install libsdl-pango-dev
-      - run: sudo apt install texlive-latex-extra
+      - run: sudo apt-get install libsdl-pango-dev -y
+      - run: sudo apt install texlive-latex-extra -y
+      - run: sudo apt-get install texlive-fonts-extra -y
       - run: cd manim && pip3 install -e . 
       - run: cp manim/manim.py .
       - run: ./manim.py find_the_celebrity.py CelebrityGraph -pl
+      - run: cat /home/runner/work/manim/manim/media/Tex/*.log
