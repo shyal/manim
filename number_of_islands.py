@@ -9,7 +9,7 @@ class List:
         self.parent = parent
         self.objs = []
         for i, a in enumerate(A):
-            obj = TextMobject(a)
+            obj = TextMobject(str(a))
             self.objs.append(obj)
             if i == 0:
                 obj.move_to(init_pos)
@@ -85,7 +85,7 @@ class NumberOfIslands(Scene, LogoMixin):
                             grid[i][j] = '0'
                             M_nums[i][j].set_color(RED)
                             self.wait(0.3)
-                            new = TextMobject(0)
+                            new = TextMobject('0')
                             new.move_to(M_nums[i][j])
                             self.remove(M_nums[i][j])
                             M_nums[i][j] = new
@@ -103,7 +103,7 @@ class NumberOfIslands(Scene, LogoMixin):
                             if islands == 1:
                                 total += 1
                                 self.remove(self.n)
-                                self.n = TextMobject(total)
+                                self.n = TextMobject(str(total))
                                 self.n.next_to(total_obj)
                                 self.add(self.n)
 
