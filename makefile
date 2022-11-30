@@ -483,9 +483,9 @@ celebrity: 	videos/find_the_celebrity/${RES}/CelebrityNaive.mp4 \
 
 videos/find_the_celebrity/${RES}/CelebrityNaive.mp4: find_the_celebrity.py logo.py
 	${ENV} ./manim.py find_the_celebrity.py CelebrityNaive ${FLAGS}
-	ls
+	ls 
 	pwd
-	aws s3 cp $@ s3://manim
+	aws s3 cp media/$@ s3://manim
 # 	if ${sync}; then rsync --progress $@ root@ioloop.io:/home/static/; fi
 # 	if ${open}; then open $@; fi
 
