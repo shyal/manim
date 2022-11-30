@@ -1,6 +1,6 @@
 
 type = 'dev'
-sync = false
+sync = true
 open = false
 
 ifeq ($(type),prod)
