@@ -17,6 +17,7 @@ jobs:
       # - run: curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
       # - run: unzip awscliv2.zip
       # - run: ./aws/install
+      - run: sudo apt-get install ffmpeg
       - run: git clone https://github.com/3b1b/manim.git
       - run: cd manim && git checkout f934bdc61e6709cbb7b56045d6194a83d5a985c3
       - run: sudo apt-get install libsdl-pango-dev -y
