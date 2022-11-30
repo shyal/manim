@@ -16,6 +16,7 @@ jobs:
       - run: sudo apt-get install libsdl-pango-dev -y
       - run: sudo apt install texlive-latex-extra -y
       - run: sudo apt-get install texlive-fonts-extra -y
+      - run: sudo apt-get install texlive-science -y
       - run: cd manim && pip3 install -e . 
       - run: cp manim/manim.py .
       - run: ./manim.py find_the_celebrity.py CelebrityGraph -pl
