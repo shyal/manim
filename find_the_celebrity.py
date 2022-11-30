@@ -10,7 +10,7 @@ BODY_INDEX   = 1
 ARMS_INDEX   = 2
 LEGS_INDEX   = 3
 
-SVG_IMAGE_DIR = '/tmp/input/images'
+SVG_IMAGE_DIR = 'images'
 
 class StickMan(SVGMobject):
     CONFIG = {
