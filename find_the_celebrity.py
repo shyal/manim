@@ -74,7 +74,7 @@ class Party:
                 self.wait(0.1)
             self.add(stickman)
             loc = 3*LEFT*sin(i/8*pi*2)+3*DOWN*cos(i/8*pi*2)
-            number = TextMobject(i)
+            number = TextMobject(str(i))
             number.move_to(loc+DOWN/2)
             number.scale(0.6)
             self.add(number)
