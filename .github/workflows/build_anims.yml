@@ -29,3 +29,4 @@ jobs:
       - run: cd manim && pip3 install -e . 
       - run: cp manim/manim.py .
       - run: make celebrity
+      - run: make islands
