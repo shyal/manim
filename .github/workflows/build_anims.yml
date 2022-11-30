@@ -11,8 +11,8 @@ jobs:
         with:
           python-version: '3.9'
           cache: 'pip'
-      - run: git clone https://github.com/3b1b/manim.git
-      - run: cd manim && git checkout f934bdc61e6709cbb7b56045d6194a83d5a985c3
-      - run: sudo apt-get install libsdl-pango-dev
-      - run: sudo apt install texlive-latex-extra
-      - run: cd manim && pip3 install -e . 
+      # - run: git clone https://github.com/3b1b/manim.git
+      # - run: cd manim && git checkout f934bdc61e6709cbb7b56045d6194a83d5a985c3
+      # - run: sudo apt-get install libsdl-pango-dev
+      # - run: sudo apt install texlive-latex-extra
+      # - run: cd manim && pip3 install -e . 
