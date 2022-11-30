@@ -1,0 +1,10 @@
+{
+    "scenes":["Space"],
+    "cacheable":true,
+    "more":"https:\/\/pythonical.org",
+    "local":false,
+    "manifestUrl":"https:\/\/static.ioloop.io\/pythonical_videos\/entries.json",
+    "license":"",
+    "description":"View your favourite algorithms animated, for easier understanding and retention.",
+    "name":"Pythonical"
+}
