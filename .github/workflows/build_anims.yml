@@ -28,4 +28,19 @@ jobs:
       - run: sudo apt-get install texlive-science -y
       - run: cd manim && pip3 install -e . 
       - run: cp manim/manim.py .
-      - run: make buildings
+      # - run: make buildings
+      # - run: make add_two_numbers
+      # - run: make merge
+      # - run: make sublist
+      - run: make drone
+      - run: make longest_arith
+      - run: make stock
+      - run: make dfs
+      - run: make validate_sudoku
+      - run: make solve_sudoku
+      - run: make subarray_sum
+      - run: make primes
+      - run: make array_index_element
+      - run: make lev
+      - run: make islands
+      # - run: make celebrity
