@@ -60,7 +60,7 @@ class Drone2D(Base):
         circlev.move_to(self.coords_to_point(13, route[0][2]))
         fuel.move_to(self.coords_to_point(13, 0))
 
-        fuel_amount = TextMobject(self.CONFIG['starting_fuel'])
+        fuel_amount = TextMobject(str(self.CONFIG['starting_fuel']))
         fuel_amount.next_to(fuel, RIGHT)
 
         self.play(Write(circle), Write(circlev), Write(fuel), Write(fuel_amount))
@@ -71,7 +71,7 @@ class Drone2D(Base):
             vmov1 = ApplyMethod(circle.move_to, p)
             vmov2 = ApplyMethod(circlev.move_to, v_coord)
             fuel_v -= (route[i][2] - route[i-1][2])
-            fuel_amount_new = TextMobject(fuel_v)
+            fuel_amount_new = TextMobject(str(fuel_v))
             fuel_amount_new.set_color(RED if fuel_v < 0 else GREEN)
             fuel_amount_new.next_to(fuel, RIGHT)
             self.play(vmov1, vmov2, Transform(fuel_amount, fuel_amount_new), run_time=2)
