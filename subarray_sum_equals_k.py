@@ -2,7 +2,7 @@ from manimlib.imports import *
 import math
 
 from logo import LogoMixin
-flatten = lambda t: [item for sublist in t for item in sublist]
+flatten = lambda t: [str(item) for sublist in t for item in sublist]
 
 HEAD_INDEX   = 0
 BODY_INDEX   = 1
@@ -207,13 +207,13 @@ class HoppingBackK(SubaraySum):
         self.total = 0
         self.total_title = TextMobject('Total: ')
         self.total_title.shift(DOWN*2)
-        self.total_obj = TextMobject(0)
+        self.total_obj = TextMobject(str(0))
         self.total_obj.next_to(self.total_title, RIGHT)
         self.play(Write(self.total_title), Write(self.total_obj))
 
     def incr_total(self):
         self.total += 1
-        total_obj = TextMobject(self.total)
+        total_obj = TextMobject(str(self.total))
         total_obj.next_to(self.total_title, RIGHT)
         anims = [FadeIn(total_obj), FadeOut(self.total_obj)]
         self.total_obj = total_obj
@@ -290,10 +290,10 @@ class HoppingBackKSubs(HoppingBackK):
         acc = self.acc_nums[val]
         anims.append(ApplyMethod(acc.set_color, BLUE))
         minus = TextMobject('-')
-        k = TextMobject(5)
+        k = TextMobject(str(5))
         eq = TextMobject('=')
         r = self.ACC_I[val] - 5
-        self.res = TextMobject(r)
+        self.res = TextMobject(str(r))
 
         self.group = VGroup(minus, k, eq, self.res)
         self.group.scale(1.5)

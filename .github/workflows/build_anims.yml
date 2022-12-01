@@ -34,10 +34,10 @@ jobs:
       # - run: make sublist
       # - run: make drone
       # - run: make longest_arith
-      - run: make stock
-      - run: make dfs
-      - run: make validate_sudoku
-      - run: make solve_sudoku
+      # - run: make stock
+      # - run: make dfs
+      # - run: make validate_sudoku
+      # - run: make solve_sudoku
       - run: make subarray_sum
       - run: make primes
       - run: make array_index_element
