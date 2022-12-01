@@ -156,7 +156,7 @@ sublist: 	videos/reverse_sublist/${RES}/ReverseSublist1.mp4 \
 			videos/reverse_sublist/${RES}/ReverseSublistCreation.mp4 \
 			videos/reverse_sublist/${RES}/ReverseSublistTail.mp4 \
 			videos/reverse_sublist/${RES}/ReverseSublistTailStaticTmpMoving.mp4 \
-			videos/reverse_sublist/${RES}/ReverseSublistTailStatic.mp
+			videos/reverse_sublist/${RES}/ReverseSublistTailStatic.mp4
 
 videos/reverse_sublist/${RES}/ReverseSublistTailStaticTmpMoving.mp4: reverse_sublist.py logo.py linked_list.py
 	${ENV} ./manim.py reverse_sublist.py ReverseSublistTailStaticTmpMoving ${FLAGS}
