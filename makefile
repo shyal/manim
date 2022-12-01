@@ -38,8 +38,8 @@ all: 	linked_list_cycle \
 
 %.gif: %.mp4
 	echo $^
-	ffmpeg -y -i $^ -r 15 -vf scale=1024:-1 media/$@
-	if ${sync}; then aws s3 cp media/$@ s3://manim; fi
+# 	ffmpeg -y -i $^ -r 15 -vf scale=1024:-1 media/$@
+# 	if ${sync}; then aws s3 cp media/$@ s3://manim; fi
 
 entries:
 	python3 entries.py `ls videos/*/1440p60/*.mp4`
