@@ -105,7 +105,7 @@ class BestTimeToBuyAndSellStockMinPriceMarkersTrade(Base):
                 self.play(ShowCreation(dot0))
                 self.play(GrowFromPoint(line, line.get_bottom()))
                 self.play(ShowCreation(dot1))
-                diff = TextMobject(v[0] - v[1])
+                diff = TextMobject(str(v[0] - v[1]))
                 diff.next_to(p0, DOWN)
                 self.play(Write(diff))
                 index = vals.index(v[1])

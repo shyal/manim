@@ -33,7 +33,7 @@ jobs:
       # - run: make merge
       # - run: make sublist
       # - run: make drone
-      - run: make longest_arith
+      # - run: make longest_arith
       - run: make stock
       - run: make dfs
       - run: make validate_sudoku
