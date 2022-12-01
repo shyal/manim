@@ -38,7 +38,7 @@ jobs:
       # - run: make dfs
       # - run: make validate_sudoku
       # - run: make solve_sudoku
-      - run: make subarray_sum
+      # - run: make subarray_sum
       - run: make primes
       - run: make array_index_element
       - run: make lev

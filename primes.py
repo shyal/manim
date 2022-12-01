@@ -13,7 +13,7 @@ class NumberGridMixin:
         g = None
         row = []
         for i in range(100):
-            obj = TextMobject(i)
+            obj = TextMobject(str(i))
             obj.set_color(self.INIT_COLOR if i > 1 else GREY)
             obj.scale(0.7)
             row.append(obj)
@@ -29,9 +29,9 @@ class PrimesTrialDivision(Scene, LogoMixin):
         LogoMixin.construct(self)
         NumberGridMixin.construct(self)
 
-        divisor = TextMobject(2)
+        divisor = TextMobject(str(2))
         divisor.set_color(BLUE)
-        dividend = TextMobject(1)
+        dividend = TextMobject(str(1))
         dividend.set_color(GREEN)
         line = TextMobject("\%")
         line.scale(0.5)
@@ -45,7 +45,7 @@ class PrimesTrialDivision(Scene, LogoMixin):
         num_ops_text.scale(0.7)
         num_ops_text.next_to(dividend, RIGHT*2+DOWN*2)
         
-        num_ops = TextMobject(0)
+        num_ops = TextMobject(str(0))
         num_ops.scale(0.7)
         num_ops.next_to(num_ops_text, RIGHT)
 
@@ -56,7 +56,7 @@ class PrimesTrialDivision(Scene, LogoMixin):
         nops = 0
         arrow = None
         for i in range(2, n):
-            iobj = TextMobject(i)
+            iobj = TextMobject(str(i))
             iobj.set_color(GREY)
             iobj.move_to(divisor)
             equation.add(iobj)
@@ -102,9 +102,9 @@ class PrimesSieve(Scene, LogoMixin):
         LogoMixin.construct(self)
         NumberGridMixin.construct(self)
 
-        divisor = TextMobject(2)
+        divisor = TextMobject(str(2))
         divisor.set_color(BLUE)
-        dividend = TextMobject(1)
+        dividend = TextMobject(str(1))
         dividend.set_color(GREEN)
         line = TextMobject("*")
         line.scale(0.5)
@@ -118,7 +118,7 @@ class PrimesSieve(Scene, LogoMixin):
         num_ops_text.scale(0.7)
         num_ops_text.next_to(dividend, RIGHT*2+DOWN*2)
         
-        num_ops = TextMobject(0)
+        num_ops = TextMobject(str(0))
         num_ops.scale(0.7)
         num_ops.next_to(num_ops_text, RIGHT)
 
@@ -130,7 +130,7 @@ class PrimesSieve(Scene, LogoMixin):
 
         primes = [False, False] + [True] * n
         for i in range(2, n // 2):
-            iobj = TextMobject(i)
+            iobj = TextMobject(str(i))
             iobj.set_color(GREY)
             iobj.move_to(divisor)
             equation.add(iobj)
