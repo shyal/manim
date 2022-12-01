@@ -92,7 +92,11 @@ videos/bitcoin/${RES}/BitcoinHalvingsMoneyPuzzle.mp4: bitcoin.py btc.json
 
 rabin_karp: \
 			videos/rabin_karp/${RES}/RabinRollingHash.mp4 \
-			videos/rabin_karp/${RES}/RabinRollingHash.gif \
+			videos/rabin_karp/${RES}/RabinHashReorgEquation.mp4 \
+			videos/rabin_karp/${RES}/RabinHashBasicEquation.mp4 \
+			videos/rabin_karp/${RES}/RabinSlidingSimple.mp4 \
+			videos/rabin_karp/${RES}/StringHash.mp4 \
+			videos/rabin_karp/${RES}/SentenceHash.mp4
 
 videos/rabin_karp/${RES}/RabinRollingHash.mp4: rabin_karp.py logo.py
 	${ENV} ./manim.py rabin_karp.py RabinRollingHash ${FLAGS}
