@@ -28,4 +28,4 @@ jobs:
       - run: sudo apt-get install texlive-science -y
       - run: cd manim && pip3 install -e . 
       - run: cp manim/manim.py .
-      - run: make merge
+      - run: make add_two_numbers
