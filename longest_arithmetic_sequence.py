@@ -119,14 +119,14 @@ class LongestArithmeticSequenceFirst(Scene, LogoMixin):
                     val = d[(j, delta)] + 1
                     d[(i, delta)] = val
                 else:
-                    one = TextMobject(1)
+                    one = TextMobject(str(1))
                     one.set_opacity(1/6)
                     one.move_to(m[row][j])
                     self.play(Transform(m[row][j], one))
                     val = 2
                     d[(i, delta)] = val
                     d[(j, delta)] = 1
-                new_val = TextMobject(val)
+                new_val = TextMobject(str(val))
                 new_val.set_opacity(val/6)
                 new_val.move_to(m[row][i])
                 self.play(Transform(m[row][i], new_val), FadeOut(doti), FadeOut(dotj))

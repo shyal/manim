@@ -32,7 +32,7 @@ jobs:
       # - run: make add_two_numbers
       # - run: make merge
       # - run: make sublist
-      - run: make drone
+      # - run: make drone
       - run: make longest_arith
       - run: make stock
       - run: make dfs
