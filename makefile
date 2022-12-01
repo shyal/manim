@@ -180,7 +180,6 @@ videos/reverse_sublist/${RES}/ReverseSublistTail.mp4: reverse_sublist.py logo.py
 
 videos/reverse_sublist/${RES}/ReverseSublist1.mp4: reverse_sublist.py logo.py linked_list.py
 	${ENV} ./manim.py reverse_sublist.py ReverseSublist1 ${FLAGS}
-	if ${sync}; then rsync --progress videos/reverse_sublist/${RES}/ReverseSublist1.gif root@ioloop.io:/home/static/; fi
 	if ${sync}; then aws s3 cp media/$@ s3://manim; fi
 	if ${open}; then open $@; fi
 
