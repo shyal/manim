@@ -14,7 +14,7 @@ class ArrayIndexElement(Scene, LogoMixin):
             flatten = lambda t: [str(item) for sublist in t for item in sublist]
             l = TextMobject(*flatten([['[']]+[((a, ',') if i < len(A) -1 else (tuple([a])) ) for i, a in enumerate(A)]+[[']']]))
             nums = l[1::2]
-            idx = TextMobject([str(x) for x in range(len(A))])
+            idx = TextMobject(*[str(x) for x in range(len(A))])
             for i, a in zip(idx, nums):
                 i.next_to(a, DOWN*0.66)
                 i.set_color(GREEN)
