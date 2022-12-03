@@ -36,11 +36,11 @@ jobs:
       # - run: make longest_arith
       # - run: make stock
       # - run: make dfs
-      # - run: make validate_sudoku
+      - run: make validate_sudoku
       # - run: make solve_sudoku
       # - run: make subarray_sum
       # - run: make primes
-      - run: make array_index_element
-      - run: make lev
-      - run: make islands
+      # - run: make array_index_element
+      # - run: make lev
+      # - run: make islands
       # - run: make celebrity

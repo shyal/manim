@@ -342,6 +342,8 @@ videos/dfs/${RES}/PostOrder.mp4: dfs.py logo.py
 validate_sudoku: 	videos/validate_sudoku/${RES}/SudokuValidateColumns.mp4 \
 					videos/validate_sudoku/${RES}/SudokuValidateRows.mp4 \
 					videos/validate_sudoku/${RES}/RowValidation.mp4 \
+					videos/validate_sudoku/${RES}/SudokuValidateSections.mp4
+					videos/validate_sudoku/${RES}/SudokuValidateAll.mp4
 
 videos/validate_sudoku/${RES}/SudokuValidateRows.mp4: validate_sudoku.py logo.py sudoku.py
 	${ENV} ./manim.py validate_sudoku.py SudokuValidateRows ${FLAGS}
